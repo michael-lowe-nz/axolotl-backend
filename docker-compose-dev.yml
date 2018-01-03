@@ -13,11 +13,11 @@ services:
     container_name: "node-dev"
     restart: "always"
     ports:
-     - "8888:8888"
+     - "1337:8888"
     volumes:
      - ./:/var/www
     links:
      - mongodb
     environment:
      - NODE_ENV=development
-    command: npm run start-dev
+    command: npm run start
