@@ -20,4 +20,4 @@ services:
      - mongodb
     environment:
      - NODE_ENV=development
-    command: npm run start
+    command: npm run start-dev
