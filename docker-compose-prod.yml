@@ -1,0 +1,11 @@
+version: '3'
+services:
+  node-prod:
+    build: .
+    container_name: "node-prod"
+    tty: true
+    ports:
+     - "8888:8888"
+    environment:
+     - NODE_ENV=production
+    command: npm start

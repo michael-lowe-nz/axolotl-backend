@@ -19,6 +19,8 @@
  * http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.connections.html
  */
 
+ const { MONGODBUSER, MONGODBPASSWORD } = require('./local');
+
 module.exports.connections = {
 
   /***************************************************************************
@@ -28,9 +30,9 @@ module.exports.connections = {
   * Installed by default.                                                    *
   *                                                                          *
   ***************************************************************************/
-  localDiskDb: {
-    adapter: 'sails-disk'
-  },
+  // localDiskDb: {
+  //   adapter: 'sails-disk'
+  // },
 
   /***************************************************************************
   *                                                                          *
@@ -58,11 +60,11 @@ module.exports.connections = {
   ***************************************************************************/
   mongoProd: {
     adapter: 'sails-mongo',
-    host: '13.54.68.174',
+    host: 'localhost',
     port: 27017,
-    user: 'username', //optional
-    password: 'password', //optional
-    database: 'your_mongo_db_name_here' //optional
+    user: '', //optional
+    password: '', //optional
+    // database: 'form-data' //optional
   },
 
   /***************************************************************************
