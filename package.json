@@ -28,7 +28,7 @@
     "debug": "node debug app.js",
     "start": "node app.js",
     "start-docker-prod": "sh start-docker-prod.sh",
-    "start-docker-dev": "sh start-docker-dev.sh",
+    "start-docker-dev": "sh start-docker-dev.sh"
   },
   "main": "app.js",
   "repository": {
