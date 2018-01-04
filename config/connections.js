@@ -19,7 +19,8 @@
  * http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.connections.html
  */
 
- const { MONGODBUSER, MONGODBPASSWORD } = require('./local');
+ const { MONGODBUSER, MONGODBPASSWORD, MONGODBHOST } = require('./local');
+ console.log('Are these my creds?', MONGODBUSER, MONGODBPASSWORD, MONGODBHOST);
 
 module.exports.connections = {
 
@@ -58,13 +59,20 @@ module.exports.connections = {
   * Run: npm install sails-mongo@for-sails-0.12 --save                       *
   *                                                                          *
   ***************************************************************************/
+
   mongoProd: {
     adapter: 'sails-mongo',
-    host: 'localhost',
+    host: MONGODBHOST,
     port: 27017,
-    user: '', //optional
-    password: '', //optional
-    // database: 'form-data' //optional
+    user: MONGODBUSER, //optional
+    password: MONGODBPASSWORD, //optional
+    database: 'form-data' //optional
+  },
+
+  mongoDev: {
+    adapter: 'sails-mongo',
+    host: 'mongodb',
+    port: 27017,
   },
 
   /***************************************************************************

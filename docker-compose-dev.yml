@@ -13,7 +13,7 @@ services:
     container_name: "node-dev"
     restart: "always"
     ports:
-     - "1337:8888"
+     - "8888:8888"
     volumes:
      - ./:/var/www
     links:

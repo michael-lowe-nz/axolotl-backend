@@ -3,7 +3,10 @@ services:
   node-prod:
     build: .
     container_name: "node-prod"
-    tty: true
+    restart: "always"
+    volumes:
+    - ./:/var/www
+#    tty: true
     ports:
      - "8888:8888"
     environment:
