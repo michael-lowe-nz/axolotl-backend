@@ -11,4 +11,4 @@ services:
      - "8888:8888"
     environment:
      - NODE_ENV=production
-    command: npm start
+    command: npm run start-dev
