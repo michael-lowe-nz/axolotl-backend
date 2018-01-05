@@ -9,6 +9,34 @@ module.exports = {
 
   attributes: {
 
+    label : { type: 'string' },
+
+    columns : { type: 'string' },
+
+    columnsAfter : { type: 'string' },
+
+    required : { type: 'boolean' },
+
+    placeholder : { type: 'string' },
+
+    type : { type: 'json' },
+
+    conditionallyShow : { type: 'json' },
+
+    toolTipContent : { type: 'string' },
+
+    additionalInfo : { type: 'string' },
+
+    additionalButton : { type: 'string' },
+
+    options : {
+      model: 'option'
+    },
+
+    sectionId : {
+      model: 'section'
+    }
+
   }
 };
 

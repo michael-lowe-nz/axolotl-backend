@@ -1,5 +1,5 @@
 /**
- * Section.js
+ * Form.js
  *
  * @description :: TODO: You might write a short summary of how this model works and what it represents here.
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
@@ -13,9 +13,12 @@ module.exports = {
 
     subtitle : { type: 'string' },
 
-    formId: {
-      model: 'form'
-    }
+    instructions: { type: 'string'},
+
+    code: { type: 'string'},
+
+    postSubmission: { type: 'string'},
+
   }
 };
 

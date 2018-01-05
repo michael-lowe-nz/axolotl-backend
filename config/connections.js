@@ -19,8 +19,7 @@
  * http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.connections.html
  */
 
- const { MONGODBUSER, MONGODBPASSWORD, MONGODBHOST } = require('./local');
- console.log('Are these my creds?', MONGODBUSER, MONGODBPASSWORD, MONGODBHOST);
+const { MONGODBUSER, MONGODBPASSWORD, MONGODBHOST } = require('./local');
 
 module.exports.connections = {
 

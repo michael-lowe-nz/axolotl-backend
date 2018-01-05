@@ -9,6 +9,15 @@ module.exports = {
 
   attributes: {
 
+    key : { type: 'string' },
+
+    value : { type: 'string' },
+
+    columns: { type: 'json' },
+
+    rows: {type: 'json' },
+
+    fields: {type: 'json'}
   }
 };
 
